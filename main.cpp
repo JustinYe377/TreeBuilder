@@ -7,7 +7,7 @@ extern "C" int yyparse();
 extern "C" FILE* yyin;
 
 int main() {
-    yyin = fopen("input_file.tb", "r");
+    yyin = fopen("Examples/ex1.tb", "r");
     if (!yyin) {
         std::cerr << "Error opening input file.\n";
         return 1;
